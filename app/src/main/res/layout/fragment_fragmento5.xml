@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmento5">
+
+
+    <TextView
+
+        android:id="@+id/txtPregunta5"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="90dp"
+        android:textAlignment="center"
+        android:text="Pregunta 5" />
+
+    <TextView
+        android:id="@+id/txtDepregunta5"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="150dp"
+        android:textAlignment="center"
+        android:text="El simbolo NA de la tabla periodica
+corresponde a:" />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="280dp">
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Plomo" />
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Sodio" />
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Potasio" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginVertical="525dp"
+        android:backgroundTint="#A63446"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#0C6291"
+        android:layout_marginVertical="630dp"
+        android:layout_marginHorizontal="130dp"
+        android:text="Button" />
+
+
+</FrameLayout>
