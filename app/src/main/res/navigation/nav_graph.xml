@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.trivia.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_fragmento1"
+            app:destination="@id/fragmento1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento1"
+        android:name="com.example.trivia.fragmento1"
+        android:label="fragment_fragmento1"
+        tools:layout="@layout/fragment_fragmento1" >
+        <action
+            android:id="@+id/action_fragmento1_to_fragmento2"
+            app:destination="@id/fragmento2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento2"
+        android:name="com.example.trivia.fragmento2"
+        android:label="fragment_fragmento2"
+        tools:layout="@layout/fragment_fragmento2" >
+        <action
+            android:id="@+id/action_fragmento2_to_fragmento3"
+            app:destination="@id/fragmento3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento3"
+        android:name="com.example.trivia.fragmento3"
+        android:label="fragment_fragmento3"
+        tools:layout="@layout/fragment_fragmento3" >
+        <action
+            android:id="@+id/action_fragmento3_to_fragmento4"
+            app:destination="@id/fragmento4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento4"
+        android:name="com.example.trivia.fragmento4"
+        android:label="fragment_fragmento4"
+        tools:layout="@layout/fragment_fragmento4" >
+        <action
+            android:id="@+id/action_fragmento4_to_fragmento5"
+            app:destination="@id/fragmento5" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento5"
+        android:name="com.example.trivia.fragmento5"
+        android:label="fragment_fragmento5"
+        tools:layout="@layout/fragment_fragmento5" >
+        <action
+            android:id="@+id/action_fragmento5_to_resultado"
+            app:destination="@id/resultado" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultado"
+        android:name="com.example.trivia.resultado"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" />
+</navigation>

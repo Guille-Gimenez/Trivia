@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     //String NoPregunta, pregunta, opcion1, opcion2, opcion3;
 
-    int nota = 0; int Npregunta = 1;
-
+    int nota = 0;
+    int Npregunta = 1;
 
 
     @Override
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
+/*
 
 
         //Se le asigna a cada objeto el id de lo que va a usar
@@ -279,5 +279,6 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
-
+*/
+    }
 }

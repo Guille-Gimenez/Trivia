@@ -15,14 +15,14 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragmento3#newInstance} factory method to
+ * Use the {@link Inicio#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragmento3 extends Fragment {
+public class Inicio extends Fragment {
 
 
 
-    public fragmento3() {
+    public Inicio() {
         // Required empty public constructor
     }
 
@@ -32,11 +32,11 @@ public class fragmento3 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragmento3.
+     * @return A new instance of fragment Inicio.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragmento3 newInstance(String param1, String param2) {
-        fragmento3 fragment = new fragmento3();
+    public static Inicio newInstance(String param1, String param2) {
+        Inicio fragment = new Inicio();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -53,21 +53,23 @@ public class fragmento3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragmento3, container, false);
+        return inflater.inflate(R.layout.fragment_inicio, container, false);
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    public  void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view,savedInstanceState);
-        Button btn1=view.findViewById(R.id.btnSiguiente3);
-        final NavController navController= Navigation.findNavController(view);
+
+        Button btn1= view.findViewById(R.id.btnInicio);
+        final NavController navController=Navigation.findNavController(view);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.fragmento4);
+                navController.navigate(R.id.fragmento1);
             }
         });
     }
+
 }
