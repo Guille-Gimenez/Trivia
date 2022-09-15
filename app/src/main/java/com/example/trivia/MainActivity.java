@@ -23,7 +23,7 @@ import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity {
-
+/*
     //Se declaran los objetos para usarlos
 
     RadioButton rdOpc1, rdOpc2, rdOpc3;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     int nota = 0;
     int Npregunta = 1;
 
-
+*/
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+      //  fragmento1 f1=new fragmento1();
+     //   resultado ultimo= new resultado();
+
+    //    RadioButton rd1Opt1=(RadioButton) findViewById(R.id.rdBtnOpc1);
+
+   //     Bundle args=new Bundle();
+    //    args.putBoolean("respuesta1",rd1Opt1.isChecked());
+   //     ultimo.setArguments(args);
 /*
 
 

@@ -38,19 +38,19 @@ corresponde a:" />
         android:layout_marginVertical="40dp">
 
         <RadioButton
-            android:id="@+id/rdBtnOpc1"
+            android:id="@+id/rdBtn5Opc1"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Plomo" />
 
         <RadioButton
-            android:id="@+id/rdBtnOpc2"
+            android:id="@+id/rdBtn5Opc2"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Sodio" />
 
         <RadioButton
-            android:id="@+id/rdBtnOpc3"
+            android:id="@+id/rdBtn5Opc3"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Potasio" />

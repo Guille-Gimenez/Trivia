@@ -37,19 +37,19 @@
         android:layout_marginVertical="40dp">
 
         <RadioButton
-            android:id="@+id/rdBtnOpc1"
+            android:id="@+id/rdBtn1Opc1"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Helsinky" />
 
         <RadioButton
-            android:id="@+id/rdBtnOpc2"
+            android:id="@+id/rdBtn1Opc2"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Estocolmo" />
 
         <RadioButton
-            android:id="@+id/rdBtnOpc3"
+            android:id="@+id/rdBtn1Opc3"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:text="Oslo" />

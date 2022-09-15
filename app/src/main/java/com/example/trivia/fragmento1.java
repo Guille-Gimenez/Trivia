@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,13 +63,21 @@ public class fragmento1 extends Fragment {
         super.onViewCreated(view,savedInstanceState);
 
         Button bt1=view.findViewById(R.id.btnSiguiente1);
+        RadioButton btn_respuesta= view.findViewById(R.id.rdBtn1Opc1);
         final NavController navController= Navigation.findNavController(view);
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.fragmento2);
+
+                Bundle argumento=new Bundle();
+                argumento.putBoolean("respuesta1",btn_respuesta.isChecked());
+
+
+                navController.navigate(R.id.fragmento2,argumento);
+
             }
         });
     }
+
 }

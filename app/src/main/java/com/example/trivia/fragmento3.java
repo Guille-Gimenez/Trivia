@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,12 +62,18 @@ public class fragmento3 extends Fragment {
     {
         super.onViewCreated(view,savedInstanceState);
         Button btn1=view.findViewById(R.id.btnSiguiente3);
+        RadioButton btn_respuesta= view.findViewById(R.id.rdBtn3Opc2);
         final NavController navController= Navigation.findNavController(view);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.fragmento4);
+                Bundle argumento=new Bundle();
+                argumento.putBoolean("respuesta1",getArguments().getBoolean("respuesta1"));
+                argumento.putBoolean("respuesta2",getArguments().getBoolean("respuesta2"));
+                argumento.putBoolean("respuesta3",btn_respuesta.isChecked());
+
+                navController.navigate(R.id.fragmento4,argumento);
             }
         });
     }
